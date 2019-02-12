@@ -91,7 +91,7 @@
 		A10F78462212C10600FBBC64 /* JFloatedViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFloatedViewCell.m; sourceTree = "<group>"; };
 		A10F78472212C10600FBBC64 /* JFloatedViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFloatedViewCell.h; sourceTree = "<group>"; };
 		A10F78482212C10600FBBC64 /* JFloatedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFloatedViewController.m; sourceTree = "<group>"; };
-		A10F784A2212C10600FBBC64 /* JPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPage.h; sourceTree = "<group>"; };
+		A10F784A2212C10600FBBC64 /* JView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JView.h; sourceTree = "<group>"; };
 		A10F784B2212C10600FBBC64 /* JPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPageView.h; sourceTree = "<group>"; };
 		A10F784C2212C10600FBBC64 /* JPageBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPageBar.m; sourceTree = "<group>"; };
 		A10F784D2212C10600FBBC64 /* JPageConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPageConstant.h; sourceTree = "<group>"; };
@@ -310,6 +310,7 @@
 		A10F78432212C10600FBBC64 /* JView */ = {
 			isa = PBXGroup;
 			children = (
+				A10F784A2212C10600FBBC64 /* JView.h */,
 				A10F78442212C10600FBBC64 /* FloatingView */,
 				A10F78492212C10600FBBC64 /* JPageView */,
 			);
@@ -331,13 +332,12 @@
 		A10F78492212C10600FBBC64 /* JPageView */ = {
 			isa = PBXGroup;
 			children = (
-				A10F784A2212C10600FBBC64 /* JPage.h */,
-				A10F784B2212C10600FBBC64 /* JPageView.h */,
-				A10F784C2212C10600FBBC64 /* JPageBar.m */,
 				A10F784D2212C10600FBBC64 /* JPageConstant.h */,
-				A10F784E2212C10600FBBC64 /* JPageView.m */,
 				A10F784F2212C10600FBBC64 /* JPageConstant.m */,
+				A10F784B2212C10600FBBC64 /* JPageView.h */,
+				A10F784E2212C10600FBBC64 /* JPageView.m */,
 				A10F78502212C10600FBBC64 /* JPageBar.h */,
+				A10F784C2212C10600FBBC64 /* JPageBar.m */,
 			);
 			path = JPageView;
 			sourceTree = "<group>";
