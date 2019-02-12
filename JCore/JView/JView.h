@@ -9,6 +9,8 @@
 #ifndef Header_h
 #define Header_h
 
-#import "JPage.h"
+#import "JPageConstant.h"
+#import "JPageView.h"
+#import "JPageBar.h"
 
 #endif /* Header_h */

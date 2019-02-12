@@ -128,11 +128,28 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9420608E75D107913F45C96F32B54CC4 /* Pods-JCore_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCore_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9CBA7576DAA3B18A42F87050A3C596E0 /* Pods-JCore_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCore_Tests-resources.sh"; sourceTree = "<group>"; };
-		9CEB4851D7FA66A909054272D1C9208B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9DB8AD5D5B767A1C14D51B218147CFDE /* JCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FB0E5DB340AEA034E406CACDBD11A64 /* JFloatedViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFloatedViewCell.m; sourceTree = "<group>"; };
-		9FD6BF392AD5EBB07A296EE9F9925C47 /* JFloatedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JFloatedViewController.m; sourceTree = "<group>"; };
-		A10F78602212D85C00FBBC64 /* JPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPage.h; sourceTree = "<group>"; };
+		A10F78422212C10600FBBC64 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A10F78452212C10600FBBC64 /* JFloatedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFloatedViewController.h; sourceTree = "<group>"; };
+		A10F78462212C10600FBBC64 /* JFloatedViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFloatedViewCell.m; sourceTree = "<group>"; };
+		A10F78472212C10600FBBC64 /* JFloatedViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFloatedViewCell.h; sourceTree = "<group>"; };
+		A10F78482212C10600FBBC64 /* JFloatedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFloatedViewController.m; sourceTree = "<group>"; };
+		A10F784A2212C10600FBBC64 /* JView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JView.h; sourceTree = "<group>"; };
+		A10F784B2212C10600FBBC64 /* JPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPageView.h; sourceTree = "<group>"; };
+		A10F784C2212C10600FBBC64 /* JPageBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPageBar.m; sourceTree = "<group>"; };
+		A10F784D2212C10600FBBC64 /* JPageConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPageConstant.h; sourceTree = "<group>"; };
+		A10F784E2212C10600FBBC64 /* JPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPageView.m; sourceTree = "<group>"; };
+		A10F784F2212C10600FBBC64 /* JPageConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPageConstant.m; sourceTree = "<group>"; };
+		A10F78502212C10600FBBC64 /* JPageBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPageBar.h; sourceTree = "<group>"; };
+		A10F78552212C96500FBBC64 /* TransitionAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionAnimator.h; sourceTree = "<group>"; };
+		A10F78562212C96500FBBC64 /* SwipeUpInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeUpInteractiveTransition.m; sourceTree = "<group>"; };
+		A10F78572212C96500FBBC64 /* PresentedAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentedAnimation.h; sourceTree = "<group>"; };
+		A10F78582212C96500FBBC64 /* DismissAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DismissAnimation.m; sourceTree = "<group>"; };
+		A10F78592212C96500FBBC64 /* TransitionAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimator.m; sourceTree = "<group>"; };
+		A10F785A2212C96500FBBC64 /* SwipeUpInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeUpInteractiveTransition.h; sourceTree = "<group>"; };
+		A10F785B2212C96500FBBC64 /* PresentedAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentedAnimation.m; sourceTree = "<group>"; };
+		A10F785C2212C96500FBBC64 /* DismissAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DismissAnimation.h; sourceTree = "<group>"; };
+		A10F785E2212C9E500FBBC64 /* JRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRequest.m; sourceTree = "<group>"; };
+		A10F785F2212C9E500FBBC64 /* JRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRequest.h; sourceTree = "<group>"; };
 		A11D5B54955E3381F067364E427B571A /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		A37F2224D2BBD01B37D3304433C6A97A /* SwipeUpInteractiveTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwipeUpInteractiveTransition.h; path = JCore/JTools/Transfer/SwipeUpInteractiveTransition.h; sourceTree = "<group>"; };
 		A5B8E38A7CAAF040B7E5C4FE7296C8FE /* Pods-JCore_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JCore_Tests.modulemap"; sourceTree = "<group>"; };
@@ -394,9 +411,9 @@
 		D53FD52E1B981FF85431729D5A4BCF43 /* JView */ = {
 			isa = PBXGroup;
 			children = (
-				A6D8DF3635C22BB4928ACAD6B3FE30D1 /* JView.h */,
-				68C67D377D11BE8D8B745FFEFEF3917F /* FloatingView */,
-				7D6ED9B6C6B5D72D08CD1F5BA80BA04A /* JPageView */,
+				A10F784A2212C10600FBBC64 /* JView.h */,
+				A10F78442212C10600FBBC64 /* FloatingView */,
+				A10F78492212C10600FBBC64 /* JPageView */,
 			);
 			name = JView;
 			sourceTree = "<group>";
@@ -410,8 +427,35 @@
 				9EE8FF18709A3374878AFE5C092F15AD /* Pod */,
 				05A714CB0D75D932F96653564676D9D0 /* Support Files */,
 			);
-			name = JCore;
-			path = ../..;
+			path = FloatingView;
+			sourceTree = "<group>";
+		};
+		A10F78492212C10600FBBC64 /* JPageView */ = {
+			isa = PBXGroup;
+			children = (
+				A10F784D2212C10600FBBC64 /* JPageConstant.h */,
+				A10F784F2212C10600FBBC64 /* JPageConstant.m */,
+				A10F784B2212C10600FBBC64 /* JPageView.h */,
+				A10F784E2212C10600FBBC64 /* JPageView.m */,
+				A10F78502212C10600FBBC64 /* JPageBar.h */,
+				A10F784C2212C10600FBBC64 /* JPageBar.m */,
+			);
+			path = JPageView;
+			sourceTree = "<group>";
+		};
+		A10F78542212C96500FBBC64 /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				A10F78552212C96500FBBC64 /* TransitionAnimator.h */,
+				A10F78562212C96500FBBC64 /* SwipeUpInteractiveTransition.m */,
+				A10F78572212C96500FBBC64 /* PresentedAnimation.h */,
+				A10F78582212C96500FBBC64 /* DismissAnimation.m */,
+				A10F78592212C96500FBBC64 /* TransitionAnimator.m */,
+				A10F785A2212C96500FBBC64 /* SwipeUpInteractiveTransition.h */,
+				A10F785B2212C96500FBBC64 /* PresentedAnimation.m */,
+				A10F785C2212C96500FBBC64 /* DismissAnimation.h */,
+			);
+			path = Transfer;
 			sourceTree = "<group>";
 		};
 		EAA0091F0BBBE8DA47A4B6073F4CE33E /* Pods-JCore_Example */ = {
