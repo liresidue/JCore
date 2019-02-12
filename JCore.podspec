@@ -32,23 +32,19 @@ Pod::Spec.new do |s|
   
   # 工具库
   s.subspec "JTools" do |ss|
-      ss.source_files  = "JCore/JTools/"
+      ss.source_files  = "JCore/JTools/**/*"
   end
   
   # 网络库
   s.subspec "JRequest" do |ss|
-      ss.source_files = "JCore/JRequest/"
+      ss.source_files = "JCore/JRequest/**/*"
       # ss.dependency "Moya", "~> 10.0"
-      # ss.dependency "PKHUD", "~> 5.0"
       # ss.framework  = "UIKit"
   end
   
   # 控件库
   s.subspec "JView" do |ss|
-      ss.source_files = "JCore/JView/"
-      # ss.dependency "Moya", "~> 10.0"
-      # ss.dependency "PKHUD", "~> 5.0"
-      # ss.framework  = "UIKit"
+      ss.source_files = "JCore/JView/**/*"
   end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
