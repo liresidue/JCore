@@ -2,17 +2,17 @@
 //  JViewController.m
 //  JCore
 //
-//  Created by acct<blob>=<NULL> on 02/12/2019.
-//  Copyright (c) 2019 acct<blob>=<NULL>. All rights reserved.
+//  Created by Hitter on 02/12/2019.
+//  Copyright (c) 2019 Hitter. All rights reserved.
 //
 
-#import "JViewController.h"
+#import "JMainViewController.h"
 
-@interface JViewController ()
+@interface JMainViewController ()
 
 @end
 
-@implementation JViewController
+@implementation JMainViewController
 
 - (void)viewDidLoad
 {

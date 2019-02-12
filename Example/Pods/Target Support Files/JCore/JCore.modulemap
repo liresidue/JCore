@@ -1,0 +1,6 @@
+framework module JCore {
+  umbrella header "JCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
