@@ -54,7 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		044135EE67F2E0895B9BB6BBF62236AB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		044135EE67F2E0895B9BB6BBF62236AB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		11716E0BEF017565CAE6363C462F1EA1 /* Pods-JCore_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCore_Example-resources.sh"; sourceTree = "<group>"; };
@@ -75,37 +75,25 @@
 		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		605C9DF9E033084FC06CDF7751AA61A9 /* Pods-JCore_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCore_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		67E276593855381568F725E69496F29C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CEAA10DB4824AAF2BC7EF87FC7BA292 /* JCore.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = JCore.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6CEAA10DB4824AAF2BC7EF87FC7BA292 /* JCore.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = JCore.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6D3B39BD375501C6BBA6151E9CF81E90 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B37D7C695D5C6C47A7C093595CD4F06 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
 		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		8A70678A6CB3759A0711E7EE02144B44 /* Pods_JCore_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCore_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CD4F07B2B08B301EC729ADF5F4FC2F8 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A70678A6CB3759A0711E7EE02144B44 /* Pods_JCore_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JCore_Tests.framework; path = "Pods-JCore_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD4F07B2B08B301EC729ADF5F4FC2F8 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1AA93F18FAFC6E077C872BCA01BB0F /* Pods-JCore_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JCore_Example.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9420608E75D107913F45C96F32B54CC4 /* Pods-JCore_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCore_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9CBA7576DAA3B18A42F87050A3C596E0 /* Pods-JCore_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCore_Tests-resources.sh"; sourceTree = "<group>"; };
-		A10F782E2212BBA500FBBC64 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		A10F78312212BBA500FBBC64 /* JFloatedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFloatedViewController.h; sourceTree = "<group>"; };
-		A10F78322212BBA500FBBC64 /* JFloatedViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFloatedViewCell.m; sourceTree = "<group>"; };
-		A10F78332212BBA500FBBC64 /* JFloatedViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFloatedViewCell.h; sourceTree = "<group>"; };
-		A10F78342212BBA500FBBC64 /* JFloatedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFloatedViewController.m; sourceTree = "<group>"; };
-		A10F78362212BBA500FBBC64 /* JPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPage.h; sourceTree = "<group>"; };
-		A10F78372212BBA500FBBC64 /* JPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPageView.h; sourceTree = "<group>"; };
-		A10F78382212BBA500FBBC64 /* JPageBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPageBar.m; sourceTree = "<group>"; };
-		A10F78392212BBA500FBBC64 /* JPageConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPageConstant.h; sourceTree = "<group>"; };
-		A10F783A2212BBA500FBBC64 /* JPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPageView.m; sourceTree = "<group>"; };
-		A10F783B2212BBA500FBBC64 /* JPageConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPageConstant.m; sourceTree = "<group>"; };
-		A10F783C2212BBA500FBBC64 /* JPageBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPageBar.h; sourceTree = "<group>"; };
 		A11D5B54955E3381F067364E427B571A /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		A5B8E38A7CAAF040B7E5C4FE7296C8FE /* Pods-JCore_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JCore_Tests.modulemap"; sourceTree = "<group>"; };
 		A86559F01BC453B0077AB3E9F9400C3E /* Pods-JCore_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCore_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A8A816754AF0E43C38028EF0B8DBB72D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A8A816754AF0E43C38028EF0B8DBB72D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		BBB6A925DF90E5500E7BDCC094FEBEA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BC26D688A92ED79B27BFC032A5C04C94 /* Pods_JCore_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCore_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC26D688A92ED79B27BFC032A5C04C94 /* Pods_JCore_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JCore_Example.framework; path = "Pods-JCore_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C1EE7E922FE0D7D9B1396C31EEB158CE /* Pods-JCore_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCore_Example-dummy.m"; sourceTree = "<group>"; };
 		D17624D1274CC1408619CD7E6478A132 /* Pods-JCore_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCore_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -193,6 +181,7 @@
 				3288FCB8E15F6401DE6220AE5CA1D27B /* Support Files */,
 				99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -269,66 +258,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A10F782B2212BBA500FBBC64 /* JTools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = JTools;
-			path = JCore/JTools;
-			sourceTree = "<group>";
-		};
-		A10F782C2212BBA500FBBC64 /* JRequest */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = JRequest;
-			path = JCore/JRequest;
-			sourceTree = "<group>";
-		};
-		A10F782D2212BBA500FBBC64 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				A10F782E2212BBA500FBBC64 /* .gitkeep */,
-			);
-			name = Assets;
-			path = JCore/Assets;
-			sourceTree = "<group>";
-		};
-		A10F782F2212BBA500FBBC64 /* JView */ = {
-			isa = PBXGroup;
-			children = (
-				A10F78302212BBA500FBBC64 /* FloatingView */,
-				A10F78352212BBA500FBBC64 /* JPageView */,
-			);
-			name = JView;
-			path = JCore/JView;
-			sourceTree = "<group>";
-		};
-		A10F78302212BBA500FBBC64 /* FloatingView */ = {
-			isa = PBXGroup;
-			children = (
-				A10F78312212BBA500FBBC64 /* JFloatedViewController.h */,
-				A10F78322212BBA500FBBC64 /* JFloatedViewCell.m */,
-				A10F78332212BBA500FBBC64 /* JFloatedViewCell.h */,
-				A10F78342212BBA500FBBC64 /* JFloatedViewController.m */,
-			);
-			path = FloatingView;
-			sourceTree = "<group>";
-		};
-		A10F78352212BBA500FBBC64 /* JPageView */ = {
-			isa = PBXGroup;
-			children = (
-				A10F78362212BBA500FBBC64 /* JPage.h */,
-				A10F78372212BBA500FBBC64 /* JPageView.h */,
-				A10F78382212BBA500FBBC64 /* JPageBar.m */,
-				A10F78392212BBA500FBBC64 /* JPageConstant.h */,
-				A10F783A2212BBA500FBBC64 /* JPageView.m */,
-				A10F783B2212BBA500FBBC64 /* JPageConstant.m */,
-				A10F783C2212BBA500FBBC64 /* JPageBar.h */,
-			);
-			path = JPageView;
-			sourceTree = "<group>";
-		};
 		EAA0091F0BBBE8DA47A4B6073F4CE33E /* Pods-JCore_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,10 +279,6 @@
 		EFC3DFCE28D1C8BDEC02F4755B6AC3E5 /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				A10F782C2212BBA500FBBC64 /* JRequest */,
-				A10F782B2212BBA500FBBC64 /* JTools */,
-				A10F782F2212BBA500FBBC64 /* JView */,
-				A10F782D2212BBA500FBBC64 /* Assets */,
 				3EF098F7DF83475318EDBF39B13575D1 /* Pod */,
 			);
 			name = JCore;

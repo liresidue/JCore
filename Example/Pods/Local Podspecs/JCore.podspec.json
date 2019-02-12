@@ -1,22 +1,36 @@
 {
   "name": "JCore",
   "version": "0.1.0",
-  "summary": "A short description of JCore.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/acct<blob>=<NULL>/JCore",
+  "summary": "iOS项目常用封装（Objective-C）",
+  "description": "iOS项目常用工具库，网络请求库，常用view",
+  "homepage": "https://github.com/liresidue/JCore",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "acct<blob>=<NULL>": "liresidue@gmail.com"
+    "Hitter": "liresidue@gmail.com"
   },
   "source": {
-    "git": "https://github.com/acct<blob>=<NULL>/JCore.git",
+    "git": "https://github.com/liresidue/JCore.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "JCore/Classes/**/*"
+  "default_subspecs": "JRequest",
+  "subspecs": [
+    {
+      "name": "JTools",
+      "source_files": "JCore/JTools/"
+    },
+    {
+      "name": "JRequest",
+      "source_files": "JCore/JRequest/"
+    },
+    {
+      "name": "JView",
+      "source_files": "JCore/JView/"
+    }
+  ]
 }
