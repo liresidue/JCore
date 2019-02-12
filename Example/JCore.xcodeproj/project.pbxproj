@@ -13,7 +13,7 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* JAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* JAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* JViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* JViewController.m */; };
+		6003F5A7195388D20070C39A /* JMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* JMainViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -22,6 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		A10F781A2212B30900FBBC64 /* JViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F78182212B30800FBBC64 /* JViewController.m */; };
 		BCF54CF69148B251B93EF5B0 /* Pods_JCore_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0F2799A2D1F4BDD4394849 /* Pods_JCore_Example.framework */; };
 		C89C5F0CCC7EF2343D9BB330 /* Pods_JCore_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB6C70DD24D523DF9D50083 /* Pods_JCore_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -37,11 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05749FB8F66B21EB9F1DD00B /* JCore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JCore.podspec; path = ../JCore.podspec; sourceTree = "<group>"; };
+		05749FB8F66B21EB9F1DD00B /* JCore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JCore.podspec; path = ../JCore.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0DB6C70DD24D523DF9D50083 /* Pods_JCore_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCore_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18018713E0B1DF43FF9062A5 /* Pods-JCore_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCore_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCore_Example/Pods-JCore_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1D0F2799A2D1F4BDD4394849 /* Pods_JCore_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCore_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F2CD3DBA7661FE1CADDC618 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1F2CD3DBA7661FE1CADDC618 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JCore_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCore_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,8 +53,8 @@
 		6003F59B195388D20070C39A /* JCore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCore-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* JAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* JAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* JViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* JViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JViewController.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* JMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMainViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* JMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMainViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* JCore_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCore_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -64,8 +65,10 @@
 		60F5F479EDA6AF052439BF56 /* Pods-JCore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCore_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCore_Tests/Pods-JCore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A10F78182212B30800FBBC64 /* JViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JViewController.m; sourceTree = "<group>"; };
+		A10F78192212B30800FBBC64 /* JViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JViewController.h; sourceTree = "<group>"; };
 		A95B42F3DD11FCE925CEC0E4 /* Pods-JCore_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCore_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCore_Tests/Pods-JCore_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DE39691021F892F1F29533AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DE39691021F892F1F29533AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FA31B25786737FEF383B6C3F /* Pods-JCore_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCore_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCore_Example/Pods-JCore_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,11 +146,12 @@
 		6003F593195388D20070C39A /* Example for JCore */ = {
 			isa = PBXGroup;
 			children = (
+				A10F78172212B30000FBBC64 /* JView */,
 				6003F59C195388D20070C39A /* JAppDelegate.h */,
 				6003F59D195388D20070C39A /* JAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* JViewController.h */,
-				6003F5A6195388D20070C39A /* JViewController.m */,
+				6003F5A5195388D20070C39A /* JMainViewController.h */,
+				6003F5A6195388D20070C39A /* JMainViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -194,6 +198,15 @@
 				1F2CD3DBA7661FE1CADDC618 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		A10F78172212B30000FBBC64 /* JView */ = {
+			isa = PBXGroup;
+			children = (
+				A10F78192212B30800FBBC64 /* JViewController.h */,
+				A10F78182212B30800FBBC64 /* JViewController.m */,
+			);
+			path = JView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +261,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "acct<blob>=<NULL>";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = REKG5W7ND6;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -375,8 +391,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* JAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* JViewController.m in Sources */,
+				6003F5A7195388D20070C39A /* JMainViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				A10F781A2212B30900FBBC64 /* JViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,12 +521,14 @@
 			baseConfigurationReference = FA31B25786737FEF383B6C3F /* Pods-JCore_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = REKG5W7ND6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JCore/JCore-Prefix.pch";
 				INFOPLIST_FILE = "JCore/JCore-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -519,12 +538,14 @@
 			baseConfigurationReference = 18018713E0B1DF43FF9062A5 /* Pods-JCore_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = REKG5W7ND6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JCore/JCore-Prefix.pch";
 				INFOPLIST_FILE = "JCore/JCore-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
