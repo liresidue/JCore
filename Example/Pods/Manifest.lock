@@ -4,13 +4,15 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - JCore (0.1.0):
-    - JCore/JRequest (= 0.1.0)
-  - JCore/JRequest (0.1.0)
+  - JCore/JRequest (0.1.1)
+  - JCore/JTools (0.1.1)
+  - JCore/JView (0.1.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
-  - JCore (from `../`)
+  - JCore/JRequest (from `../`)
+  - JCore/JTools (from `../`)
+  - JCore/JView (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -22,8 +24,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  JCore: 0b8fcead861186fff7fde8a52f2ff54a3baab09f
+  JCore: cb77e46fb8097c2c8e1709c55e2ed1b4195aa600
 
-PODFILE CHECKSUM: c45c98a1147ca89eb0007a47b1d78b689fde90f1
+PODFILE CHECKSUM: d932897fce075fed842b8f976150d70652876d3f
 
 COCOAPODS: 1.5.3

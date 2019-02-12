@@ -9,7 +9,7 @@
 #import "JViewController.h"
 #import <objc/runtime.h>
 
-#import "JPage.h"
+#import "JView.h"
 
 @interface MainViewController () <JPageViewDelegate, JPageViewDataSource>
 @property (strong, nonatomic) JPageView *pageView;

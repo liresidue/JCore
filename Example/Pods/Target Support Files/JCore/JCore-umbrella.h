@@ -10,6 +10,17 @@
 #endif
 #endif
 
+#import "JRequest.h"
+#import "DismissAnimation.h"
+#import "PresentedAnimation.h"
+#import "SwipeUpInteractiveTransition.h"
+#import "TransitionAnimator.h"
+#import "JFloatedViewCell.h"
+#import "JFloatedViewController.h"
+#import "JPageBar.h"
+#import "JPageConstant.h"
+#import "JPageView.h"
+#import "JView.h"
 
 FOUNDATION_EXPORT double JCoreVersionNumber;
 FOUNDATION_EXPORT const unsigned char JCoreVersionString[];

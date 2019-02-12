@@ -3,7 +3,12 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'JCore_Example' do
-  pod 'JCore', :path => '../'
+    
+  pod 'JCore/JView', :path => '../'
+  
+  pod 'JCore/JTools', :path => '../'
+  
+  pod 'JCore/JRequest', :path => '../'
 
   target 'JCore_Tests' do
     inherit! :search_paths

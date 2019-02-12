@@ -1,6 +1,6 @@
 {
   "name": "JCore",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "iOS项目常用封装（Objective-C）",
   "description": "iOS项目常用工具库，网络请求库，常用view",
   "homepage": "https://github.com/liresidue/JCore",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/liresidue/JCore.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -22,15 +22,15 @@
   "subspecs": [
     {
       "name": "JTools",
-      "source_files": "JCore/JTools/"
+      "source_files": "JCore/JTools/**/*"
     },
     {
       "name": "JRequest",
-      "source_files": "JCore/JRequest/"
+      "source_files": "JCore/JRequest/**/*"
     },
     {
       "name": "JView",
-      "source_files": "JCore/JView/"
+      "source_files": "JCore/JView/**/*"
     }
   ]
 }
