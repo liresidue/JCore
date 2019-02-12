@@ -9,14 +9,14 @@
 #import "JViewController.h"
 #import <objc/runtime.h>
 
-#import "JView.h"
+#import "JPage.h"
 
-@interface MainViewController () <JPageViewDelegate, JPageViewDataSource>
+@interface JViewController () <JPageViewDelegate, JPageViewDataSource>
 @property (strong, nonatomic) JPageView *pageView;
 
 @end
 
-@implementation MainViewController
+@implementation JViewController
 
 #pragma mark - <UITableViewDelegate>
 
