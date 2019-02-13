@@ -17,6 +17,7 @@ CGFloat miniErrorW = 0.f;
     UIButton    *_currentButton;
     UIView      *_separatorView;
     
+    
     NSMutableArray <UIView *> *_titleViews;
     NSMutableArray *_titleWidths;
     NSMutableArray *_originTitleWidths; // 未加工的titleWidths(用来自适应宽度) TODO: 待使用

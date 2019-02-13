@@ -11,12 +11,14 @@
 #endif
 
 #import "JRequest.h"
+#import "UIView+Gradient.h"
 #import "DismissAnimation.h"
 #import "PresentedAnimation.h"
 #import "SwipeUpInteractiveTransition.h"
 #import "TransitionAnimator.h"
 #import "JFloatedViewCell.h"
 #import "JFloatedViewController.h"
+#import "JPage.h"
 #import "JPageBar.h"
 #import "JPageConstant.h"
 #import "JPageView.h"
