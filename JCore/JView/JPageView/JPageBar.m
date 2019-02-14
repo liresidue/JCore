@@ -54,9 +54,8 @@ CGFloat miniErrorW = 0.f;
     [self setupFrame];
 }
 
-- (void)didMoveToWindow {
-    [super didMoveToWindow];
-    
+- (void)didMoveToSuperview {
+    [super didMoveToSuperview];
     [self reloadData];
 }
 
@@ -122,6 +121,8 @@ CGFloat miniErrorW = 0.f;
     if (self.style == JPageIndicatorStyleNone) {
         _indicatorView.hidden = YES;
     }
+    
+    [self layoutSubviews];
 }
 
 - (void)didScrollWithOffset:(CGPoint)offset {
@@ -241,7 +242,6 @@ CGFloat miniErrorW = 0.f;
     _contentView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     
     CGFloat totalW = [[_titleWidths valueForKeyPath:@"@sum.floatValue"] floatValue];
-    _contentView.contentSize = CGSizeMake(totalW + 20.f, 0); // 20.f是左右间距
     
     __block CGFloat itemX = 0.f;
     [_titleViews enumerateObjectsUsingBlock:^(UIView *titleView, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -261,6 +261,8 @@ CGFloat miniErrorW = 0.f;
         itemX += itemW;
     }];
     [_contentView bringSubviewToFront:_indicatorView];
+    
+    _contentView.contentSize = CGSizeMake(totalW + 20.f, 0); // 20.f是左右间距
 }
 
 - (void)setupAdaption { // 自适应
@@ -325,5 +327,8 @@ CGFloat miniErrorW = 0.f;
     [_indicatorView setBackgroundColor:indicatorColor];
 }
 
+- (void)dealloc {
+    NSLog(@"%@ - dealloc", NSStringFromClass([self class]));
+}
 
 @end

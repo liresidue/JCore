@@ -5,6 +5,8 @@
 //  Created by Hitter on 2018/7/24.
 //  Copyright © 2019 Hitter. All rights reserved.
 //
+//  使用的时如果控制器的automaticallyAdjustsScrollViewInsets不设置为NO，会导致头部scrollview下移
+//
 
 #import <UIKit/UIKit.h>
 #import "JPageConstant.h"

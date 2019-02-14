@@ -49,8 +49,8 @@
     [self selectItemAtIndex:0 animated:NO];
 }
 
-- (void)didMoveToWindow {
-    [super didMoveToWindow];
+- (void)didMoveToSuperview {
+    [super didMoveToSuperview];
     [self reloadData];
 }
 
@@ -225,6 +225,7 @@
     }
     
     [_pageBar reloadData];
+    [self layoutSubviews];
 }
 
 #pragma mark - <Events>
@@ -269,8 +270,12 @@
     [_controllers enumerateObjectsUsingBlock:^(UIViewController *obj, NSUInteger idx, BOOL * _Nonnull stop) {
         obj.view.frame = CGRectMake(idx * self->_contentView.frame.size.width, 0, self->_contentView.frame.size.width, self->_contentView.frame.size.height);
     }];
+    NSLog(@"self.bounds.size.width - %lf", self.bounds.size.width);
     _contentView.contentSize = CGSizeMake(self.bounds.size.width * _totalCount, 0);
 }
 
+- (void)dealloc {
+    NSLog(@"%@ - dealloc", NSStringFromClass([self class]));
+}
 
 @end

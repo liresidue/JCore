@@ -7,6 +7,8 @@
 //
 
 #import "JViewController.h"
+#import "JTestViewController.h"
+
 #import <objc/runtime.h>
 
 #import "JPage.h"
@@ -51,6 +53,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor grayColor];
     [self.view addSubview:self.pageView];
 }
@@ -60,9 +63,9 @@
 }
 
 - (UIViewController *)viewControllerInIndex:(NSInteger)index {
-    UIViewController *vc = [[UIViewController alloc] init];
+    JTestViewController *vc = [[JTestViewController alloc] init];
     if (index % 2 == 0) {
-        vc.view.backgroundColor = [UIColor redColor];
+        vc.view.backgroundColor = [UIColor lightGrayColor];
     }
     return vc;
 }
