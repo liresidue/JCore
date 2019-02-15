@@ -29,6 +29,9 @@ CGFloat miniErrorW = 0.f;
     NSInteger _currentIndex;    // 滑动索引
     UIEdgeInsets _indicatorEdgeInsets;
     UIEdgeInsets _itemEdgeInsets;
+    
+    CGFloat _leftViewW;  // 左边view的宽度
+    CGFloat _rightViewW; // 右边view的宽度
 }
 
 #pragma mark - <Systems>
@@ -143,7 +146,7 @@ CGFloat miniErrorW = 0.f;
 }
 
 - (void)startScrollWithOffset:(CGPoint)offset {
-    _currentIndex = offset.x / (self.frame.size.width == 0 ? offset.x : self.frame.size.width);
+    _currentIndex = offset.x / (self.frame.size.width == 0 ? 1 : self.frame.size.width);
     _startOffset = offset;
     
     // 设置初始位置
@@ -158,7 +161,7 @@ CGFloat miniErrorW = 0.f;
 }
 
 - (void)endScrollWithOffset:(CGPoint)offset {
-    _currentIndex = offset.x / (self.frame.size.width == 0 ? offset.x : self.frame.size.width);
+    _currentIndex = offset.x / (self.frame.size.width == 0 ? 1 : self.frame.size.width);
     
     if (!self.isCustomItems) { // 自带的items修改文字属性
         if ([_titleViews[_currentIndex] isKindOfClass:[UIButton class]]) {
@@ -239,8 +242,6 @@ CGFloat miniErrorW = 0.f;
 }
 
 - (void)setupFrame {
-    _contentView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-    
     CGFloat totalW = [[_titleWidths valueForKeyPath:@"@sum.floatValue"] floatValue];
     
     __block CGFloat itemX = 0.f;
@@ -262,6 +263,13 @@ CGFloat miniErrorW = 0.f;
     }];
     [_contentView bringSubviewToFront:_indicatorView];
     
+    if (_leftCustomView) {
+        _leftCustomView.frame = CGRectMake(0, 0, _leftViewW, _titleViews.firstObject.frame.size.height);
+    }
+    if (_rightCustomView) {
+        _rightCustomView.frame = CGRectMake(self.frame.size.width - _rightViewW, 0, _rightViewW, _titleViews.firstObject.frame.size.height);
+    }
+    _contentView.frame = CGRectMake(_leftViewW, 0, self.frame.size.width - _leftViewW - _rightViewW, self.frame.size.height);
     _contentView.contentSize = CGSizeMake(totalW + 20.f, 0); // 20.f是左右间距
 }
 
@@ -303,7 +311,6 @@ CGFloat miniErrorW = 0.f;
 #pragma mark - <Events>
 
 - (void)tapClick:(UITapGestureRecognizer *)ges {
-    NSLog(@"UITapGestureRecognizer - tap %ld", ges.view.tag);
     [self.delegate pageBar:self didSeletedAtIndex:ges.view.tag];
 }
 
@@ -320,6 +327,32 @@ CGFloat miniErrorW = 0.f;
 }
 
 #pragma mark - <Setter>
+
+- (void)setLeftCustomView:(UIButton *)leftCustomView {
+    _leftCustomView = leftCustomView;
+    if (![_leftCustomView isKindOfClass:[UIButton class]]) return;
+    _leftViewW = [_leftCustomView.currentTitle boundingRectWithSize:CGSizeMake(MAXFLOAT, 0)
+                                                            options:NSStringDrawingUsesLineFragmentOrigin
+                                                         attributes:@{NSFontAttributeName: _leftCustomView.titleLabel.font}
+                                                            context:nil].size.width;
+    _leftViewW = _leftViewW > 60.f ? _leftViewW + 10.f : 60.f;
+    _leftCustomView.contentHorizontalAlignment  = UIControlContentHorizontalAlignmentCenter;
+    _leftCustomView.contentVerticalAlignment    = UIControlContentVerticalAlignmentBottom;
+    [self addSubview:_leftCustomView];
+}
+
+- (void)setRightCustomView:(UIButton *)rightCustomView {
+    _rightCustomView = rightCustomView;
+    if (![_rightCustomView isKindOfClass:[UIButton class]]) return;
+    _rightViewW = [_rightCustomView.currentTitle boundingRectWithSize:CGSizeMake(MAXFLOAT, 0)
+                                                              options:NSStringDrawingUsesLineFragmentOrigin
+                                                           attributes:@{NSFontAttributeName: _rightCustomView.titleLabel.font}
+                                                              context:nil].size.width;
+    _rightViewW = _rightViewW > 60.f ? _rightViewW + 10.f : 60.f;
+    _rightCustomView.contentHorizontalAlignment  = UIControlContentHorizontalAlignmentCenter;
+    _rightCustomView.contentVerticalAlignment    = UIControlContentVerticalAlignmentBottom;
+    [self addSubview:_rightCustomView];
+}
 
 - (void)setIndicatorColor:(UIColor *)indicatorColor {
     _indicatorColor = indicatorColor;

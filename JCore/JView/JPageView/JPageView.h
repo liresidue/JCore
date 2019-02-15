@@ -92,7 +92,7 @@ typedef enum : NSUInteger {
 @optional
 
 /**
- 滚动栏指示器上下左右间距
+ 滚动栏指示器 - 上面距离文字间距 下面距离底部间距 左右间距
 
  @return UIEdgeInsets
  */
@@ -130,12 +130,12 @@ typedef enum : NSUInteger {
 /**
  自定义头部滚动条左边view
  */
-@property (strong, nonatomic) UIView *leftCustomView;
+@property (strong, nonatomic) UIButton *leftCustomView;
 
 /**
  自定义头部滚动条右边view
  */
-@property (strong, nonatomic) UIView *rightCustomView;
+@property (strong, nonatomic) UIButton *rightCustomView;
 
 /**
  刷新数据

@@ -85,4 +85,15 @@
 // 滚动样式
 @property (assign, nonatomic) JPageIndicatorStyle style;
 
+/**
+ 自定义头部滚动条左边view
+ */
+@property (strong, nonatomic) UIButton *leftCustomView;
+
+/**
+ 自定义头部滚动条右边view
+ */
+@property (strong, nonatomic) UIButton *rightCustomView;
+
+
 @end

@@ -56,6 +56,28 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor grayColor];
     [self.view addSubview:self.pageView];
+    
+    UIButton *leftBtn = [[UIButton alloc] init];
+    [leftBtn setTitle:@"很长的title" forState:UIControlStateNormal];
+    [leftBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [leftBtn.titleLabel setFont:[UIFont systemFontOfSize:14.f]];
+    [leftBtn addTarget:self action:@selector(leftClick) forControlEvents:UIControlEventTouchUpInside];
+    self.pageView.leftCustomView = leftBtn;
+    
+    UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightBtn addTarget:self action:@selector(rightClick) forControlEvents:UIControlEventTouchUpInside];
+    [rightBtn setTitle:@"右边" forState:UIControlStateNormal];
+    [rightBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [rightBtn.titleLabel setFont:[UIFont systemFontOfSize:14.f]];
+    self.pageView.rightCustomView = rightBtn;
+}
+
+- (void)leftClick {
+    NSLog(@"leftClick");
+}
+
+- (void)rightClick {
+    NSLog(@"rightClick");
 }
 
 - (NSInteger)numberOfPagesInPageView:(JPageView *)pageView {

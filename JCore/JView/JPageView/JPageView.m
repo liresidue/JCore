@@ -101,12 +101,12 @@
         pageBar.isCustomItems = NO;
         
         // 添加默认按钮
-        UIButton *barItem = [[UIButton alloc] init];
+        UIButton *barItem = [UIButton buttonWithType:UIButtonTypeCustom];
         barItem.tag = index;
         barItem.titleLabel.numberOfLines    = 1;
         barItem.titleLabel.lineBreakMode    = NSLineBreakByClipping;
         barItem.contentHorizontalAlignment  = UIControlContentHorizontalAlignmentCenter;
-        barItem.contentVerticalAlignment    = UIControlContentVerticalAlignmentBottom;;
+        barItem.contentVerticalAlignment    = UIControlContentVerticalAlignmentBottom;
         [barItem addTarget:self action:@selector(titleViewDidClick:) forControlEvents:UIControlEventTouchUpInside];
         
         if ([self.dataSource respondsToSelector:@selector(pageView:titleAttributedInIndex:)]) {
@@ -121,7 +121,9 @@
         [barItem setTitle:[NSString stringWithFormat:@"第%ld页", (long)index] forState:UIControlStateNormal];
         
         // 自定义标题
-        [barItem setTitle:[self.dataSource pageView:self titleForControllerInIndex:index] forState:UIControlStateNormal];
+        if ([self.dataSource respondsToSelector:@selector(pageView:titleAttributedInIndex:)]) {
+            [barItem setTitle:[self.dataSource pageView:self titleForControllerInIndex:index] forState:UIControlStateNormal];
+        }
         return barItem;
     }
     
@@ -270,8 +272,20 @@
     [_controllers enumerateObjectsUsingBlock:^(UIViewController *obj, NSUInteger idx, BOOL * _Nonnull stop) {
         obj.view.frame = CGRectMake(idx * self->_contentView.frame.size.width, 0, self->_contentView.frame.size.width, self->_contentView.frame.size.height);
     }];
-    NSLog(@"self.bounds.size.width - %lf", self.bounds.size.width);
     _contentView.contentSize = CGSizeMake(self.bounds.size.width * _totalCount, 0);
+}
+
+#pragma mark - <Setter>
+
+- (void)setLeftCustomView:(UIButton *)leftCustomView {
+    _leftCustomView = leftCustomView;
+    _pageBar.leftCustomView = leftCustomView;
+    
+}
+
+- (void)setRightCustomView:(UIButton *)rightCustomView {
+    _rightCustomView = rightCustomView;
+    _pageBar.rightCustomView = rightCustomView;
 }
 
 - (void)dealloc {
